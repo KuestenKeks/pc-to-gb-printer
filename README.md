@@ -1,15 +1,10 @@
-# ToDo
+This is based on Squaresweets Discord bot: https://github.com/Squaresweets/GBPrinter-discord-bot
 
-FerdinandoPH — 31.03.2022
-Do you have a version of the program that just gets an image and prints it (without the discord bot bit). I would like to try this out with my own game boy printer!
+I just removed the Discord Code :)
 
-Squaresweets  — 31.03.2022
-Not really, but all the code is pretty self explanetary
-In main it saves the image as image.png
-so just add your own image
-Then if call ImageProcessing.process_image("image,png")
-Which dithers one and saves it as "dithered.png"
-Then if you just call printImage in serialCommunication it will just do it
-(hopefully)
+# Getting Started
 
-https://discord.com/channels/781528730304249886/838067669538045973/959156829974306927
+1. Flash the firmware file "firmware-0.1.uf2" onto your Raspberry Pi Pico (press the BOOTSEL button on your RasPi while connecting it to a PC and it will appear as a storage device. You can just copy the firmware file here)
+2. Connect the GB Link Adapter / RasPi to your Game Boy Printer with a link cable
+3. Connect the Adapter / RasPi to your PC
+4. run main.py with the path to image you want to print as the first argument
